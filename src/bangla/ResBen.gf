@@ -400,7 +400,7 @@ oper
 
 param
   VForm = VF Tense Person ;
-  Tense = PreSim | PreCon | PrePer | PaSim | PaCon | PaPer | FuSim ;
+  Tense = PreSim | PreCon | PrePer | PaSim | PaCon | PaPer | PaHab | FuSim ;
 
 oper
   LinV : Type = {
@@ -471,6 +471,13 @@ oper
         P3H1 => high + "েছিলো" ;
         P2H2 | P3H2 => high + "েছিলেন"
       } ;
+      PaHab => table {
+        P1 => high + "তাম" ;
+        P2H1 => high + "তে" ;
+        P2H0 => high + "তিস" ;
+        P3H1 => high + "ত" ;
+        P2H2 | P3H2 => high + "তেন"
+      } ;
       FuSim => table {
         P1 => high + "বো" ;
         P2H1 => high + "বে" ;
@@ -525,6 +532,13 @@ oper
         P2H0 => high + "েছিলি" ;
         P3H1 => high + "েছিলো" ;
         P2H2 | P3H2 => high + "েছিলেন"
+      } ;
+      PaHab => table {
+        P1 => low + "তাম" ;
+        P2H1 => low + "তে" ;
+        P2H0 => low + "তিস" ;
+        P3H1 => low + "ত" ;
+        P2H2 | P3H2 => low + "তেন"
       } ;
       FuSim => table {
         P1 => low + "বো" ;
@@ -581,6 +595,13 @@ oper
         P3H1 => high + "য়েছিলো" ;
         P2H2 | P3H2 => high + "য়েছিলেন"
       } ;
+      PaHab => table {
+        P1 => high + "তাম" ;
+        P2H1 => high + "তে" ;
+        P2H0 => high + "তিস" ;
+        P3H1 => high + "ত" ;
+        P2H2 | P3H2 => high + "তেন"
+      } ;
       FuSim => table {
         P1 => high + "বো" ;
         P2H1 => high + "বে" ;
@@ -635,6 +656,13 @@ oper
         P2H0 => high + "য়েছিলি" ;
         P3H1 => high + "য়েছিলো" ;
         P2H2 | P3H2 => high + "য়েছিলেন"
+      } ;
+      PaHab => table {
+        P1 => low + "তাম" ;
+        P2H1 => low + "তে" ;
+        P2H0 => low + "তিস" ;
+        P3H1 => low + "ত" ;
+        P2H2 | P3H2 => low + "তেন"
       } ;
       FuSim => table {
         P1 => low + "বো" ;

@@ -6,7 +6,7 @@ concrete AdjectiveBen of Adjective = CatBen ** open ResBen, Prelude in {
 
   -- : AP -> Adv -> AP ; -- warm by nature
   AdvAP  ap adv = ap ** {
-    s = ap.s ++ adv.s ;
+    s =  adv.s ++ ap.s ;
   } ;
 
   -- : A  -> AP ;

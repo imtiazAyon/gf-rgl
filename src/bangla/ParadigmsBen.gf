@@ -145,8 +145,8 @@ oper
   } ;
 
   mkPN = overload {
-    mkPN : Str -> PN = \s -> lin PN (ResBen.mkLinPN s Sg) ;
-    mkPN : Str -> Number -> PN = \s, n ->lin PN (ResBen.mkLinPN s n) ;
+    mkPN : Str -> PN = \s -> lin PN (ResBen.mkLinPN s Sg Inanimate) ;
+    mkPN : Str -> Number -> Animacy -> PN = \s, n, a ->lin PN (ResBen.mkLinPN s n a) ;
   } ;
 {-
   mkPN = overload {

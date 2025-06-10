@@ -186,8 +186,8 @@ nomObjSameN : Str -> LinN = \s -> {
     -- g : Gender ; -- inherent gender/noun class, if your language has that
   } ;
 
-  mkLinPN : Str -> Number -> LinPN = \s,n -> {
-    s = \\c => (mkLinN Inanimate s).s ! Inflection n NoArticle c ;
+  mkLinPN : Str -> Number -> Animacy -> LinPN = \s,n,a -> {
+    s = \\c => (mkLinN a s).s ! Inflection n NoArticle c ;
     n = n
   } ;
 
